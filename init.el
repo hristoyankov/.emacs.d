@@ -1,2 +1,7 @@
 ;; ~/.emacs.d/init.el
-(load "~/.emacs.d/my-noexternals.el")
+(add-hook
+ 'after-init-hook
+ '(lambda ()
+    (load "~/.emacs.d/my-noexternals.el")
+    ))
+
