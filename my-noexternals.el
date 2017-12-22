@@ -37,4 +37,5 @@ with a Windows external keyboard from time to time."
   
 (global-set-key (kbd "C-c w") 'swap-meta-and-super)
 
-
+;; Update path
+(setq exec-path (append exec-path '("~/bin")))
