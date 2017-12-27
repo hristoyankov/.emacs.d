@@ -19,4 +19,3 @@
 ;; add hooks
 (add-hook 'kill-buffer-hook 'my-command-buffer-kill-hook)
 (add-hook 'after-save-hook 'my-command-buffer-run-hook)
-
