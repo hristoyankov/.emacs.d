@@ -39,3 +39,7 @@ with a Windows external keyboard from time to time."
 
 ;; Update path
 (setq exec-path (append exec-path '("~/bin")))
+
+;; Eshell shortcuts
+(global-set-key (kbd "C-!") 'eshell-here)
+(global-set-key (kbd "C-x M-s") 'eshell)
