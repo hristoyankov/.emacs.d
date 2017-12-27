@@ -6,10 +6,10 @@
 (when (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ;; Wind-move
-(global-set-key (kbd "C-c C-b") 'windmove-left)
-(global-set-key (kbd "C-c C-n") 'windmove-down)
-(global-set-key (kbd "C-c C-p") 'windmove-up)
-(global-set-key (kbd "C-c C-f") 'windmove-right)
+(global-set-key (kbd "C-c C-j") 'windmove-left)
+(global-set-key (kbd "C-c C-k") 'windmove-down)
+(global-set-key (kbd "C-c C-l") 'windmove-up)
+(global-set-key (kbd "C-c C-;") 'windmove-right)
 
 ;; Deal with meta and super.
 ;; See bbatsov post http://batsov.com/articles/2012/10/14/emacs-on-osx/
