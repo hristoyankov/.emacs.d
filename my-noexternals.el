@@ -47,3 +47,15 @@ with a Windows external keyboard from time to time."
 ;; Enable integration with linux clipboard
 (setq x-select-enable-clipboard t)
 (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
+
+;; Start emacs maximized
+(add-to-list 'default-frame-alist '(fullscreen . maximized)) 
+
+;; Set default backup-directory
+(setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
+      backup-by-copying t    ; Don't delink hardlinks
+      version-control t      ; Use version numbers on backups
+      delete-old-versions t  ; Automatically delete excess backups
+      kept-new-versions 20   ; how many of the newest versions to keep
+      kept-old-versions 5    ; and how many of the old
+      )
