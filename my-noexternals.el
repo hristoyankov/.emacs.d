@@ -43,3 +43,7 @@ with a Windows external keyboard from time to time."
 ;; Eshell shortcuts
 (global-set-key (kbd "C-!") 'eshell-here)
 (global-set-key (kbd "C-x M-s") 'eshell)
+
+;; Enable integration with linux clipboard
+(setq x-select-enable-clipboard t)
+(setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
