@@ -20,3 +20,15 @@
 (require 'paren)
 (show-paren-mode 1)
 (setq show-paren-delay 0)
+
+(require 'projectile)
+(projectile-mode t)
+(setq projectile-project-search-path '("~/src/"))
+
+(require 'flx-ido)
+(ido-mode 1)
+(ido-everywhere 1)
+(flx-ido-mode 1)
+;; disable ido faces to see flx highlights.
+(setq ido-enable-flex-matching t)
+(setq ido-use-faces nil)
