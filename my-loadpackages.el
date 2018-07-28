@@ -21,8 +21,10 @@
 (show-paren-mode 1)
 (setq show-paren-delay 0)
 
+(setq projectile-keymap-prefix (kbd "C-c p"))
 (require 'projectile)
 (projectile-mode t)
+(setq projectile-switch-project-action #'projectile-dired)
 (setq projectile-project-search-path '("~/src/"))
 
 (require 'flx-ido)
