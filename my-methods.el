@@ -20,7 +20,6 @@
 (add-hook 'kill-buffer-hook 'my-command-buffer-kill-hook)
 (add-hook 'after-save-hook 'my-command-buffer-run-hook)
 
-
 ;; eshell
 ;; Stolen from here: http://www.howardism.org/Technical/Emacs/eshell-fun.html
 (defun eshell-here ()

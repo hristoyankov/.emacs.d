@@ -59,3 +59,7 @@ with a Windows external keyboard from time to time."
       kept-new-versions 20   ; how many of the newest versions to keep
       kept-old-versions 5    ; and how many of the old
       )
+
+;; Don't insert newline at the end of the file
+(setq require-final-newline nil)
+(setq mode-require-final-newline nil)
